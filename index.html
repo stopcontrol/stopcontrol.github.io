@@ -145,7 +145,7 @@ var instruction_block = {
 }*/
 var Lead = {
 	type: 'text',
-	text: ['<p>Dr&uumlcke die Enter-Taste, wenn Du bereit bist, die n&aumlchste Aufgabe zu bearbeiten.<p>']
+	text: ['<p><br><br><br><br>Dr&uumlcke die Enter-Taste, wenn Du bereit bist, die n&aumlchste Aufgabe zu bearbeiten.<p>']
 }
 
 
@@ -388,7 +388,7 @@ else {
 
 var outro = {
 	type: 'text',
-	text: ['<p> <h1><b>Herzlichen Dank !</b></h1></p><br><img src = img/smile.png style="height: 200px;width: auto">']
+	text: ['<p> <h1><b>Herzlichen Dank !</b></h1></p><br><img src = img/smile.png style="height: 200px;width: auto"><br><br><br><p><h3>Bitte dr\u00fccke jetzt ENTER, um den Download Deiner Daten zu starten.<br> Wechsle dann in den Downloads-Ordner und sende mir Deine Daten    (Die heruntergeladene Datei) an <br><br><i> marcel.jud@gmail.com</i></h3><br><b></b></p>']
 
 };
 //var y = checkAvailability(test_block_1_1.questions[0], fluency_rand[0]);
@@ -427,7 +427,7 @@ jsPsych.init({
 			}))
 			//jsPsych.saveCSVdata("WAT_t2_data.txt");
 			ext = JSON.stringify(data[[0]],undefined,2);
-			jsPsych.saveCSVdata("Lab_Association_" + ext.slice(88,95) + "Stim_" +category_rand +  ".txt");
+			jsPsych.saveCSVdata("Pair_Assoc_" + ext.slice(88,95) + "Stim_" +category_rand +  ".txt");
 		}
 });
 
