@@ -44,7 +44,7 @@
                 $("#surveytext" + i).append('<p class="surveytext">' + trial.questions[i] + '</p>');
 
                 // add text box
-                $("#surveytext" + i).append('<textarea name="textarea" style="width:40px;height:100px;"></textarea>');
+                $("#surveybox" + i).append('<textarea name="textarea" style="width:40px;height:150px;"></textarea>');
             }
             // record each keystroke
             //var IndiTime = 0;

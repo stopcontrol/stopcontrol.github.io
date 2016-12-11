@@ -52,7 +52,7 @@
 				$("#surveytext" + i).append('<p> <strong> <font size="6.5"  class="surveytext"  </font size>' + trial.questions[i] + '</strong></p>');
 				$("#surveytext" + i).append('<p> Dr&uumlcke Enter nach jeder Assoziation/Idee:');
                 // add text box
-                $("#surveytext" + i).append('<textarea autofocus id="message" name="textarea" style="width:70px;height:200px;"></textarea>');
+                $("#surveytext" + i).append('<textarea autofocus id="message" name="textarea" style="width:70px;height:230px;"></textarea>');
 
                 // add countr box
 				$("#surveytext" + i).append('<p> <i></i></p>');

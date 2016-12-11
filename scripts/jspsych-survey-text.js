@@ -4,7 +4,7 @@
  *
  * Josh de Leeuw (March 2013)
  * Updated October 2013
- * 
+ *
  * parameters:
  *      questions: array of arrays. inner arrays are arrays of strings, where each string represents a prompt
  *                  for the user to respond to.
@@ -41,6 +41,7 @@
 
                 // add question text
                 $("#surveytext" + i).append('<p class="surveytext">' + trial.questions[i] + '</p>');
+              //  $("#jspsych_text" + i).append('<p class="text">' + trial.text[i] + '</p>');
 
                 // add text box
                 $("#surveytext" + i).append('<input type="text" name="surveyresponse' + i + '"></input>');
@@ -51,7 +52,7 @@
                 'id': 'next',
                 'class': 'surveytext'
             }));
-            $("#next").html('Submit Answer');
+            $("#next").html('Weiter');
             $("#next").click(function() {
                 // measure response time
                 var endTime = (new Date()).getTime();

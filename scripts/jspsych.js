@@ -1,6 +1,6 @@
 // jspsych.js
-// 
-//	Josh de Leeuw 
+//
+//	Josh de Leeuw
 //	Percepts and Concepts Lab, Indiana University
 //
 //
@@ -145,7 +145,7 @@
         };
 
         // core.preloadImage will load images into the browser cache so that they appear quickly when
-        // used during a trial. 
+        // used during a trial.
         //  images: array of paths to images
         //  callback_complete: a function with no arguments that calls when loading is complete
         //  callback_load: a function with a single argument that calls whenever an image is loaded
@@ -155,10 +155,10 @@
           var n_loaded = 0;
           var loadfn = (typeof callback_load === 'undefined') ? function(){} : callback_load;
           var finishfn = (typeof callback_complete === 'undefined') ? function(){} : callback_complete;
-          
+
           for(var i=0;i<images.length;i++){
               var img = new Image();
-              
+
               img.onload = function(){
                 n_loaded++;
                 loadfn(n_loaded);
@@ -166,7 +166,7 @@
                     finishfn();
                 }
               };
-              
+
               img.src = images[i];
           }
         };
@@ -212,7 +212,7 @@
 
                 next: function() {
 
-                    // call on_trial_finish() 
+                    // call on_trial_finish()
                     //     if not very first trial
                     //		and not the last call in this block (no trial due to advance in block)
                     if (typeof this.trials[this.trial_idx + 1] != "undefined" && (curr_block != 0 || this.trial_idx > -1)) {
